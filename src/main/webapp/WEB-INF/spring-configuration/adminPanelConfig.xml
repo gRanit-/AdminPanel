@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+       ">
+
+
+    <bean id="viewObjectType" class="itdccs.loginmanager.web.adminpanel.common.ViewObjectType">
+        <constructor-arg value="itdccs.loginmanager.common.entities.User" type="java.lang.String"/>
+    </bean>
+
+    <util:map id="viewObjectTypeMapID" key-type="java.lang.Long">
+        <entry key="0" value-ref="viewObjectType"/>
+    </util:map>
+
+    <util:map id="viewObjectTypeMap">
+        <entry key-ref="userClass" value-ref="viewObjectType"/>
+    </util:map>
+
+
+    <util:map id="classEntityDAOMap">
+
+        <entry key-ref="userClass" value-ref="userDAO"/>
+    </util:map>
+
+
+    <bean id="userClass" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="targetClass">
+            <value>java.lang.Class</value>
+        </property>
+        <property name="targetMethod">
+            <value>forName</value>
+        </property>
+        <property name="arguments">
+            <value>itdccs.loginmanager.common.entities.User</value>
+        </property>
+    </bean>
+
+
+    <bean id="userDAO" class="itdccs.loginmanager.core.dao.UserDAOImpl"/>
+
+
+</beans>
