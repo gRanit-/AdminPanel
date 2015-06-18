@@ -15,14 +15,12 @@ import java.lang.reflect.Field;
 import java.util.Map;
 
 
-/**
- * Created by mc109881 on 2015-06-11.
- */
+
 @Service
 public class ViewObjectBuilder implements Serializable {
     private static final long serialVersionUID = 9051426275753100087L;
     Logger logger = Logger.getLogger(this.getClass());
-    // private static ViewObjectBuilder instance;
+
     private ViewObject viewObject;
 
     @Autowired
@@ -32,20 +30,7 @@ public class ViewObjectBuilder implements Serializable {
     public ViewObjectBuilder() {
     }
 
-  /*  public static ViewObjectBuilder getInstance() {
-        if (instance == null)
-            instance = new ViewObjectBuilder();
 
-        return instance;
-    }*/
-
-    /***
-     * <b>KAZDY OBIEKT MUSI MIEC DOMYSLNY KONSTUKTOR!</b>
-     * <br>
-     *
-     * @param viewObject
-     * @return
-     */
     public Object toOriginObject(ViewObject viewObject) {
         Class<?> originClass = viewObject.getViewObjectType().getOriginClass();
         Object object = null;
