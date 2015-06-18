@@ -1,4 +1,4 @@
-package itdccs.loginmanager.web.adminpanel.controllers;
+package granicki.web.adminpanel.controllers;
 
 import itdccs.loginmanager.common.dao.OrganizationDAO;
 import itdccs.loginmanager.common.dao.UserDAO;

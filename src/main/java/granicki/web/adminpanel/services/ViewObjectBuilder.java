@@ -1,9 +1,9 @@
-package itdccs.loginmanager.web.adminpanel.services;
+package granicki.web.adminpanel.services;
 
 
-import itdccs.loginmanager.web.adminpanel.common.Command;
-import itdccs.loginmanager.web.adminpanel.common.ViewObjectType;
-import itdccs.loginmanager.web.adminpanel.common.ViewObject;
+import granicki.web.adminpanel.common.ViewObject;
+import granicki.web.adminpanel.common.ViewObjectType;
+import granicki.web.adminpanel.common.Command;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

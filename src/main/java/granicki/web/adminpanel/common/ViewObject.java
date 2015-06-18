@@ -1,4 +1,4 @@
-package itdccs.loginmanager.web.adminpanel.common;
+package granicki.web.adminpanel.common;
 
 import org.apache.log4j.Logger;
 

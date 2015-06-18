@@ -6,7 +6,7 @@
        ">
 
 
-    <bean id="viewObjectType" class="itdccs.loginmanager.web.adminpanel.common.ViewObjectType">
+    <bean id="viewObjectType" class="granicki.web.adminpanel.common.ViewObjectType">
         <constructor-arg value="itdccs.loginmanager.common.entities.User" type="java.lang.String"/>
     </bean>
 

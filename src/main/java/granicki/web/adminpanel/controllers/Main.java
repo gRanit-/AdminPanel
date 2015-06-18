@@ -1,4 +1,4 @@
-package itdccs.loginmanager.web.adminpanel.controllers;
+package granicki.web.adminpanel.controllers;
 
 import java.text.DateFormat;
 import java.text.ParseException;

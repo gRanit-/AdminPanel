@@ -1,9 +1,9 @@
-package itdccs.loginmanager.web.adminpanel.controllers;
+package granicki.web.adminpanel.controllers;
 
-import itdccs.loginmanager.web.adminpanel.common.ViewObjectType;
-import itdccs.loginmanager.web.adminpanel.services.ObjectRepositories;
-import itdccs.loginmanager.web.adminpanel.common.ViewObject;
-import itdccs.loginmanager.web.adminpanel.services.ViewObjectBuilder;
+import granicki.web.adminpanel.common.ViewObjectType;
+import granicki.web.adminpanel.services.ObjectRepositories;
+import granicki.web.adminpanel.common.ViewObject;
+import granicki.web.adminpanel.services.ViewObjectBuilder;
 import itdccs.loginmanager.common.dao.EntityDAO;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
