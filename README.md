@@ -1,1 +1,1 @@
-AdminPanel is meant to be as is as possible to initialize admin panel made for Spring Framework projects.
+AdminPanel is meant to be as easy as possible to initialize and configure admin panel made for Spring Framework projects.
